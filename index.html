@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edusol – Versionsauswahl</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f5f7fa;
+      color: #1a1a1a;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    .logo {
+      width: 180px;
+      margin-bottom: 2.5rem;
+    }
+
+    h1 {
+      font-size: 1.1rem;
+      font-weight: 400;
+      color: #555;
+      margin-bottom: 2.5rem;
+      text-align: center;
+      letter-spacing: 0.02em;
+    }
+
+    .cards {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+      padding: 2.5rem 2rem;
+      width: 260px;
+      text-align: center;
+      text-decoration: none;
+      color: inherit;
+      transition: transform 0.18s ease, box-shadow 0.18s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 32px rgba(0,0,0,0.13);
+    }
+
+    .card-icon {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.6rem;
+    }
+
+    .card-original .card-icon  { background: #e8f0fe; }
+    .card-humanized .card-icon { background: #e6f4ea; }
+
+    .card-title {
+      font-size: 1.15rem;
+      font-weight: 700;
+    }
+
+    .card-desc {
+      font-size: 0.82rem;
+      color: #666;
+      line-height: 1.55;
+    }
+
+    .badge {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      padding: 0.25rem 0.75rem;
+      border-radius: 999px;
+      text-transform: uppercase;
+    }
+
+    .card-original .badge  { background: #e8f0fe; color: #1a56db; }
+    .card-humanized .badge { background: #e6f4ea; color: #1a7a3c; }
+
+    footer {
+      margin-top: 3rem;
+      font-size: 0.75rem;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+  <img src="Original/img/EDUSOL_Logo.svg" alt="Edusol" class="logo">
+
+  <h1>Bitte wählen Sie eine Version aus</h1>
+
+  <div class="cards">
+
+    <a href="Original/index.html" class="card card-original">
+      <div class="card-icon">📄</div>
+      <div>
+        <div class="card-title">Original</div>
+        <span class="badge">Original</span>
+      </div>
+      <p class="card-desc">Die ursprüngliche Version der Website mit dem klassischen Textinhalt.</p>
+    </a>
+
+    <a href="Humanized/index.html" class="card card-humanized">
+      <div class="card-icon">✨</div>
+      <div>
+        <div class="card-title">Humanized</div>
+        <span class="badge">Humanized</span>
+      </div>
+      <p class="card-desc">Eine überarbeitete Version mit menschlicherer, wärmerer Sprache.</p>
+    </a>
+
+  </div>
+
+  <footer>Edusol &copy; 2026</footer>
+
+</body>
+</html>
