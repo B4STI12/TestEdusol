@@ -4,7 +4,7 @@ Dieses Projekt enthält drei Versionen der Edusol-Website zum Vergleich.
 
 ## Einstieg
 
-Öffne **[index.html](https://b4sti12.github.io/TestEdusol/)** im Browser — dort kannst du direkt auswählen, welche Version du ansehen möchtest.
+Öffne **[[index.html](index.html)](https://b4sti12.github.io/TestEdusol/)** im Browser — dort kannst du direkt auswählen, welche Version du ansehen möchtest.
 
 ## Ordner-Struktur
 
