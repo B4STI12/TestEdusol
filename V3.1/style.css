@@ -1,0 +1,321 @@
+/* ============================================================
+   EDUSOL – V3.1 Central Stylesheet
+   Alle Farben, Abstände und Typografie zentral definiert.
+   ============================================================ */
+
+/* --- CSS Custom Properties (Design Tokens) --- */
+:root {
+  --color-primary:        #3a7ba0;
+  --color-primary-dark:   #3a6a85;
+  --color-bg-hero:        #b8cfe0;
+  --color-bg-band:        #cddde9;
+  --color-bg-card:        #dce8f2;
+  --color-bg-nav:         #dce8f2;
+  --color-text-dark:      #1a1a1a;
+  --color-text-body:      #555;
+  --color-text-hero:      #2a4a5e;
+  --color-text-muted:     #999;
+  --color-sol-bg:         #fef8ec;
+  --color-sol-border:     #f0dfa8;
+  --color-sol-accent:     #b87d20;
+  --color-whatsapp:       #25D366;
+
+  --font-base:            'Poppins', sans-serif;
+  --font-weight-light:    300;
+  --font-weight-regular:  400;
+  --font-weight-semi:     600;
+  --font-weight-bold:     700;
+
+  --radius-card:          1rem;       /* rounded-4 equivalent */
+  --radius-pill:          50rem;
+  --radius-btn:           0.5rem;
+
+  --heading-fluid-lg:     clamp(1.5rem, 3vw, 2rem);
+  --heading-fluid-xl:     clamp(2rem, 5vw, 3rem);
+  --heading-fluid-sm:     clamp(1.4rem, 3vw, 1.9rem);
+
+  --line-height-prose:    1.85;
+  --line-height-card:     1.7;
+}
+
+/* --- Base --- */
+body {
+  font-family: var(--font-base);
+  background-color: #ffffff;
+  color: var(--color-text-dark);
+}
+
+/* --- Navbar --- */
+.edusol-navbar {
+  background-color: var(--color-bg-nav);
+}
+
+.edusol-navbar .nav-link {
+  font-weight: var(--font-weight-semi);
+}
+
+.edusol-navbar .dropdown-menu {
+  border: none;
+  border-radius: var(--radius-card);
+}
+
+.edusol-navbar .dropdown-item {
+  border-radius: 0.5rem;
+}
+
+/* --- Buttons --- */
+.btn-edusol-primary {
+  background-color: var(--color-primary);
+  color: #fff;
+  font-weight: var(--font-weight-semi);
+  border-radius: var(--radius-pill);
+  border: none;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-edusol-primary:hover {
+  background-color: var(--color-primary-dark);
+  color: #fff;
+}
+
+.btn-edusol-outline {
+  border: 2px solid var(--color-primary);
+  color: var(--color-primary);
+  font-weight: var(--font-weight-semi);
+  border-radius: var(--radius-btn);
+  font-size: 1rem;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-edusol-outline:hover {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
+.btn-whatsapp {
+  background-color: var(--color-whatsapp);
+  color: #fff;
+  font-weight: var(--font-weight-semi);
+  border-radius: var(--radius-pill);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: none;
+}
+
+.btn-whatsapp:hover {
+  background-color: #1ebe5d;
+  color: #fff;
+}
+
+/* --- Hero Sections --- */
+.hero-main {
+  background-color: var(--color-bg-hero);
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero-sub {
+  background-color: var(--color-bg-hero);
+  min-height: 52vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero-page {
+  background-color: var(--color-bg-hero);
+  min-height: 40vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero-legal {
+  background-color: var(--color-bg-hero);
+  min-height: 28vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero-text {
+  color: var(--color-text-hero);
+  font-weight: var(--font-weight-light);
+  line-height: var(--line-height-prose);
+}
+
+.hero-eyebrow {
+  text-transform: uppercase;
+  font-weight: var(--font-weight-semi);
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  color: var(--color-primary-dark);
+}
+
+.hero-back-link {
+  color: var(--color-primary-dark);
+  font-weight: var(--font-weight-semi);
+  font-size: 0.875rem;
+  text-decoration: none;
+}
+
+.hero-back-link:hover {
+  color: var(--color-primary);
+}
+
+/* --- Sections --- */
+.section-band {
+  background-color: var(--color-bg-band);
+}
+
+.section-cards {
+  background-color: var(--color-bg-card);
+}
+
+/* --- Cards --- */
+.card-wirkungsfeld {
+  background-color: var(--color-bg-card);
+  border-radius: var(--radius-card);
+  text-decoration: none;
+  display: block;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.card-wirkungsfeld:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(58, 123, 160, 0.15);
+}
+
+.card-feature {
+  background-color: #fff;
+  border-radius: var(--radius-card);
+}
+
+.card-insight {
+  background-color: var(--color-bg-card);
+  border-radius: var(--radius-card);
+}
+
+.card-text {
+  color: var(--color-text-body);
+  font-weight: var(--font-weight-light);
+  line-height: var(--line-height-card);
+}
+
+/* --- Prose text --- */
+.prose {
+  color: var(--color-text-body);
+  font-weight: var(--font-weight-light);
+  line-height: var(--line-height-prose);
+}
+
+/* --- EDU/SOL boxes (Über uns) --- */
+.box-edu {
+  background-color: var(--color-bg-card);
+  border-radius: var(--radius-card);
+  padding: 2rem;
+  height: 100%;
+}
+
+.box-edu-label {
+  font-size: 2.8rem;
+  font-weight: var(--font-weight-bold);
+  color: var(--color-primary);
+  letter-spacing: 0.06em;
+  line-height: 1;
+}
+
+.box-edu-sub {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--color-primary);
+  font-weight: var(--font-weight-semi);
+}
+
+.box-sol {
+  background-color: var(--color-sol-bg);
+  border: 1px solid var(--color-sol-border);
+  border-radius: var(--radius-card);
+  padding: 2rem;
+  height: 100%;
+}
+
+.box-sol-label {
+  font-size: 2.8rem;
+  font-weight: var(--font-weight-bold);
+  color: var(--color-sol-accent);
+  letter-spacing: 0.06em;
+  line-height: 1;
+}
+
+.box-sol-sub {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--color-sol-accent);
+  font-weight: var(--font-weight-semi);
+}
+
+/* --- Headings --- */
+.heading-fluid-lg  { font-size: var(--heading-fluid-lg); }
+.heading-fluid-xl  { font-size: var(--heading-fluid-xl); }
+.heading-fluid-sm  { font-size: var(--heading-fluid-sm); }
+
+/* --- Legal pages --- */
+.legal-heading {
+  font-size: 1.2rem;
+  font-weight: var(--font-weight-bold);
+}
+
+.legal-body {
+  color: var(--color-text-body);
+  font-weight: var(--font-weight-light);
+  line-height: var(--line-height-prose);
+  margin-bottom: 2rem;
+}
+
+/* --- Footer --- */
+.edusol-footer {
+  background-color: var(--color-bg-nav);
+}
+
+.footer-link {
+  color: var(--color-text-dark);
+  font-weight: var(--font-weight-semi);
+  font-size: 0.875rem;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: var(--color-primary);
+}
+
+.footer-legal-link {
+  color: var(--color-text-muted);
+  font-size: 0.875rem;
+  text-decoration: none;
+}
+
+.footer-legal-link:hover {
+  color: var(--color-primary);
+}
+
+.footer-linkedin {
+  color: var(--color-primary);
+  font-weight: var(--font-weight-semi);
+  font-size: 0.875rem;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* --- Form --- */
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 0.2rem rgba(58, 123, 160, 0.2);
+}

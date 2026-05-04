@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Lernen Sie das Team hinter EDUSOL kennen – erfahrene Bildungsexpertinnen und -experten, die Schulen, NPO und Fachkräfte professionell begleiten.">
+  <title>Wir sind EDUSOL</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div id="navbar-placeholder"></div>
+
+  <!-- Hero -->
+  <section class="hero-page">
+    <div class="container px-4 px-lg-5 py-5" style="max-width: 680px;">
+      <p class="hero-eyebrow mb-3">Wer wir sind</p>
+      <h1 class="fw-bold mb-3 heading-fluid-xl">Wir sind EDUSOL</h1>
+      <p class="hero-text" style="font-size: 1.05rem;">
+        EDUSOL steht für Expertise, Empathie und nachhaltige Wirkung im Bildungsbereich.
+      </p>
+      <p class="hero-text" style="font-size: 1.05rem;">
+        EDUSOL – Wir machen morgen möglich.
+      </p>
+    </div>
+  </section>
+
+  <!-- Inhalt -->
+  <section class="py-5 bg-white">
+    <div class="container px-4" style="max-width: 720px;">
+
+      <div class="mb-5">
+        <img src="img/EDUSOL_Logo_Claim.svg" alt="EDUSOL" style="max-height: 120px; width: auto;">
+      </div>
+
+      <h3 class="fw-semibold mb-4 heading-fluid-sm" style="color: #555; letter-spacing: -0.01em; line-height: 1.3;">
+        Das sind wir.
+      </h3>
+      <p class="prose mb-4">Wir sind keine Firma, die sich gegründet hat. Wir sind Freunde, die sich gefunden haben.</p>
+      <p class="prose">
+        Patrick, Susann, Dominik, Thorsten und Bärbel verbindet mehr als nur ein Projekt. Uns verbindet eine gemeinsame Haltung: Wissen, das wirkt, gehört weitergegeben. Erfahrungen, die tragen, dürfen nicht in Schubladen verschwinden.
+      </p>
+      <p class="prose">
+        Wir arbeiten täglich in den Bereichen, über die wir sprechen. Als Schulleiter, Institutionsleiter, Wirtschaftsprüferin, Teamleiterin und Krisenverantwortliche bringen wir echte Praxis mit. Keine Theorien von aussen, sondern Lösungen von innen.
+      </p>
+      <p class="prose">
+        EDUSOL ist unser Weg, das sichtbar zu machen. Wir sind überzeugt: Was funktioniert, soll wirken. Für Menschen, für Teams, für Organisationen.
+      </p>
+      <p class="prose">
+        Wir wachsen weiter. Gemeinsam mit denen, die mit uns unterwegs sind.
+      </p>
+
+      <hr class="my-5" style="border-color: var(--color-bg-card);">
+
+      <h3 class="fw-semibold mb-4 heading-fluid-sm" style="color: #555; letter-spacing: -0.01em; line-height: 1.3;">
+        EDUSOL ist mehr als ein Name.<br>
+        <span class="fw-light" style="color: var(--color-text-muted);">Es ist ein Versprechen.</span>
+      </h3>
+
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="box-edu">
+            <div class="box-edu-label mb-1">EDU</div>
+            <div class="box-edu-sub mb-3"><em>educare</em> – fördern &amp; herausführen</div>
+            <p class="prose mb-0">Wir belehren nicht, wir begleiten. Wir lenken nicht, wir machen Potenziale sichtbar.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="box-sol">
+            <div class="box-sol-label mb-1">SOL</div>
+            <div class="box-sol-sub mb-3">Sonne &amp; <em>solution</em> – Klarheit &amp; Licht</div>
+            <p class="prose mb-0">Klarheit in komplexen Situationen, Licht wo es dunkel wird – Bildung, die bewegt. Entwicklung, die wirkt. Lösungen, die bleiben.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <div id="footer-placeholder"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    function loadPartial(id, file) {
+      fetch(file)
+        .then(r => r.text())
+        .then(html => { document.getElementById(id).innerHTML = html; })
+        .catch(err => console.error('Could not load ' + file, err));
+    }
+    loadPartial('navbar-placeholder', 'navbar.html');
+    loadPartial('footer-placeholder', 'footer.html');
+  </script>
+</body>
+</html>

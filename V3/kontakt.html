@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Nehmt Kontakt mit EDUSOL auf – wir freuen uns auf eure Anfrage und beraten euch gerne zu Coaching, Schulentwicklung, Krisenmanagement und weiteren Angeboten.">
+  <title>Gemeinsam loslegen – EDUSOL</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body style="font-family: 'Poppins', sans-serif; background-color: #ffffff; color: #1a1a1a;">
+
+
+  <!-- Navbar -->
+  <div id="navbar-placeholder"></div>
+
+  <!-- Hero -->
+  <section style="background-color: #b8cfe0; min-height: 40vh; display: flex; align-items: center;">
+    <div class="container px-4 px-lg-5 py-5" style="max-width: 680px;">
+      <p class="text-uppercase fw-semibold small mb-3" style="letter-spacing: 0.12em; color: #3a6a85;">Wir freuen uns von Euch zu hören</p>
+      <h1 class="fw-bold mb-3" style="font-size: clamp(2rem, 5vw, 3rem);">Gemeinsam loslegen</h1>
+      <p style="color: #2a4a5e; font-weight: 300; font-size: 1.05rem;">
+        Habt Ihr Fragen, möchtet Ihr ein Angebot anfragen oder einfach mehr über EDUSOL erfahren? Schreibt uns – wir melden uns schnell zurück.
+      </p>
+    </div>
+  </section>
+
+  <!-- Kontakt Inhalt -->
+  
+  <section class="py-5 bg-white">
+    <div class="container px-4" style="max-width: 680px;">
+      <div class="rounded-4 p-4 p-md-5" style="background-color: #dce8f2;">
+        <h2 class="fw-bold mb-4" style="font-size: 1.3rem;">Schreibt uns direkt</h2>
+        <p style="color: #555; font-weight: 300; line-height: 1.85;">Füllt das Formular aus – wir melden uns so schnell wie möglich.</p>
+        <hr class="my-4">
+        <form action="https://formspree.io/f/xvzdelpq" method="POST">
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <label for="vorname" class="form-label fw-semibold small">Vorname</label>
+              <input type="text" class="form-control rounded-3" id="vorname" name="vorname" placeholder="Max" required>
+            </div>
+            <div class="col-sm-6">
+              <label for="nachname" class="form-label fw-semibold small">Nachname</label>
+              <input type="text" class="form-control rounded-3" id="nachname" name="nachname" placeholder="Mustermann" required>
+            </div>
+            <div class="col-12">
+              <label for="email" class="form-label fw-semibold small">E-Mail</label>
+              <input type="email" class="form-control rounded-3" id="email" name="email" placeholder="max@beispiel.at" required>
+            </div>
+            <div class="col-12">
+              <label for="telefon" class="form-label fw-semibold small">Telefon <span class="fw-normal" style="color:#999;">(optional)</span></label>
+              <input type="tel" class="form-control rounded-3" id="telefon" name="telefon" placeholder="+43 123 456 789">
+            </div>
+            <div class="col-12">
+              <label for="organisation" class="form-label fw-semibold small">Organisation / Institution <span class="fw-normal" style="color:#999;">(optional)</span></label>
+              <input type="text" class="form-control rounded-3" id="organisation" name="organisation" placeholder="Schule, Verein, Unternehmen …">
+            </div>
+            <div class="col-12">
+              <label for="betreff" class="form-label fw-semibold small">Betreff</label>
+              <select class="form-select rounded-3" id="betreff" name="betreff" required>
+                <option value="" disabled selected>Bitte wählen …</option>
+                <option value="Coaching & Supervision">Coaching &amp; Supervision</option>
+                <option value="Schulentwicklung">Schulentwicklung</option>
+                <option value="Krisenmanagement">Krisenmanagement</option>
+                <option value="Fachvortrag">Fachvortrag</option>
+                <option value="NPO">NPO</option>
+                <option value="Anderes">Anderes</option>
+              </select>
+            </div>
+            <div class="col-12">
+              <label for="nachricht" class="form-label fw-semibold small">Nachricht</label>
+              <textarea class="form-control rounded-3" id="nachricht" name="nachricht" rows="5" placeholder="Wie können wir Euch helfen?" required></textarea>
+            </div>
+            <div class="col-12 mt-2">
+              <p class="small mb-3" style="color: #555; font-weight: 300;">Angebot auf Anfrage. Wir melden uns innerhalb von 48 Stunden.</p>
+              <button type="submit" class="btn rounded-pill px-4 py-2 fw-semibold" style="background-color: #3a7ba0; color: #fff;">Abschicken (info@edusol.ch)</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <div id="footer-placeholder"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    function loadPartial(id, file) {
+      fetch(file)
+        .then(r => r.text())
+        .then(html => { document.getElementById(id).innerHTML = html; })
+        .catch(err => console.error('Could not load ' + file, err));
+    }
+    loadPartial('navbar-placeholder', 'navbar.html');
+    loadPartial('footer-placeholder', 'footer.html');
+  </script>
+</body>
+</html>

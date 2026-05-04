@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Krisenprävention, akute Krisenintervention und Nachsorge für Schulen und Organisationen. EDUSOL bietet professionelle Unterstützung und Stabilität in schwierigen Situationen.">
+  <title>Krisenmanagement – EDUSOL</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body style="font-family: 'Poppins', sans-serif; background-color: #ffffff; color: #1a1a1a;">
+
+
+  <!-- Navbar -->
+  <div id="navbar-placeholder"></div>
+
+  <!-- Hero -->
+  <section style="background-color: #b8cfe0; min-height: 52vh; display: flex; align-items: center;">
+    <div class="container px-4 px-lg-5 py-5 text-center">
+      <a href="index.html" class="text-decoration-none small fw-semibold d-inline-block mb-5" style="color: #3a6a85;">← Zurück zur Übersicht</a>
+      <div>
+        <img src="img/EDUSOL_Fachgebiet_Krisenmanagement.svg" alt="Krisenmanagement" class="img-fluid" style="max-height: 200px; width: auto;">
+      </div>
+      <p class="mt-4 mb-0" style="font-size: 1.05rem; color: #2a4a5e; font-weight: 300; max-width: 520px; margin-inline: auto;">
+        Sicher handeln in schwierigen Zeiten – mit klaren Strukturen, professioneller Begleitung und Erfahrung im Umgang mit Krisen in Bildungseinrichtungen.
+      </p>
+    </div>
+  </section>
+
+  <!-- Content Section -->
+  <section class="py-5 bg-white">
+    <div class="container px-4 py-4 text-center" style="max-width: 720px;">
+      <h2 class="fw-bold mb-4">Stabilität in der Krise</h2>
+      <p style="color: #555; line-height: 1.85; font-weight: 300;">
+        Krisen im Schulalltag – sei es durch Konflikte im Team, kritische Ereignisse oder tiefgreifende Veränderungen – erfordern rasches und besonnenes Handeln. EDUSOL unterstützt Schulleitungen, Pädagoginnen und Organisationen dabei, Krisen zu erkennen, professionell zu begegnen und daraus gestärkt hervorzugehen. Unser Krisenmanagement-Ansatz verbindet präventive Maßnahmen mit konkreter Soforthilfe und nachhaltiger Nachbearbeitung.
+      </p>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="py-5" style="background-color: #dce8f2;">
+    <div class="container px-4">
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-4">
+          <div class="bg-white rounded-4 shadow-sm p-4 h-100">
+            <h5 class="fw-bold mb-3">Krisenprävention</h5>
+            <p class="small mb-0" style="color: #555; font-weight: 300; line-height: 1.7;">Vorbeugende Maßnahmen, Krisenhandbücher und Notfallkonzepte für Schulen und Organisationen.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="bg-white rounded-4 shadow-sm p-4 h-100">
+            <h5 class="fw-bold mb-3">Akutbegleitung</h5>
+            <p class="small mb-0" style="color: #555; font-weight: 300; line-height: 1.7;">Schnelle Unterstützung in akuten Krisensituationen – für Teams, Leitungen und betroffene Personen.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="bg-white rounded-4 shadow-sm p-4 h-100">
+            <h5 class="fw-bold mb-3">Nachbearbeitung</h5>
+            <p class="small mb-0" style="color: #555; font-weight: 300; line-height: 1.7;">Reflexion und Aufarbeitung nach kritischen Ereignissen – für eine nachhaltige Stabilisierung.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <div class="container px-4 py-5 text-center">
+    <a href="kontakt.html" class="d-inline-block text-decoration-none fw-semibold px-4 py-3 rounded-3" style="border: 2px solid #3a7ba0; color: #3a7ba0; font-size: 1rem;">
+      Wir erstellen euch gerne ein individuelles Angebot.
+    </a>
+  </div>
+
+
+  <!-- Footer -->
+  <div id="footer-placeholder"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    function loadPartial(id, file) {
+      fetch(file)
+        .then(r => r.text())
+        .then(html => { document.getElementById(id).innerHTML = html; })
+        .catch(err => console.error('Could not load ' + file, err));
+    }
+    loadPartial('navbar-placeholder', 'navbar.html');
+    loadPartial('footer-placeholder', 'footer.html');
+  </script>
+</body>
+</html>
